@@ -64,10 +64,10 @@ void TabelaSeguro()
 void TabelaEmprestimo()
 {
     Console.WriteLine("Você escolheu a opção de empréstimo!\n");
-    Console.WriteLine("      --Valor--         \t--Parcelas-- \t--Taxa--");
-    Console.WriteLine("R$1.000,00 a R$5.000,00   \t     12x     \t  28%\t");
-    Console.WriteLine("R$5.001,00 a R$10.000,00  \t     24x     \t  52%\t");
-    Console.WriteLine("R$10.001,00 a R$20.000,00 \t     48x     \t  68%\t");
+    Console.WriteLine("     --Valor-- \t\t --Parcelas--\t--Taxa--");
+    Console.WriteLine("R$1.000,00 a R$5.000,00 \t12x \t  28%\t");
+    Console.WriteLine("R$5.001,00 a R$10.000,00\t24x \t  52%\t");
+    Console.WriteLine("R$10.001,00 a R$20.000,00\t48x \t  68%\t");
 }
 
 void CondicaoSeguro()
