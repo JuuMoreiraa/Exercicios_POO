@@ -4,3 +4,4 @@ public class Servico
     public string Responsavel => "Sistema - Via aplicativo";
     public string DataContrato => DateTime.Now.ToString("dd/MM/yyyy");
 }
+

@@ -1,11 +1,7 @@
 ﻿// POO - Herança
-using System.Collections;
-using System.Net.WebSockets;
-
 repeat:
-Console.WriteLine("Bem vindo(a) á Wheather Seguros \n Selecione a opção desejada: \n[S] Serviços de Seguro Automotivo \n[E] Serviços de Empréstimo \n[X] Sair");
+MenuPrincipal();
 string opcao = Console.ReadLine().ToUpper();
-
 switch (opcao)
 {
     case "S":
@@ -15,7 +11,7 @@ switch (opcao)
         break;
 
     case "E":
-        
+
         TabelaEmprestimo();
         CondicaoEmprestimo();
         EfetivaOuNem();
@@ -28,6 +24,11 @@ switch (opcao)
 
         Console.WriteLine("Opção Inválida!\nTente novamente.");
         goto repeat;
+}
+
+void MenuPrincipal()
+{
+    Console.WriteLine("Bem vindo(a) á Wheather Seguros \n Selecione a opção desejada: \n[S] Serviços de Seguro Automotivo \n[E] Serviços de Empréstimo \n[X] Sair");
 }
 
 void EfetivaOuNem()
@@ -112,7 +113,7 @@ void CondicaoEmprestimo()
     Emprestimo emprestimo = new Emprestimo();
     Console.Write("Por favor, nos informe o nome do contratante: ");
     emprestimo.Contratante = Console.ReadLine();
-    repeatII:
+repeatII:
     Console.Write("Informe o valor desejado para empréstimo: ");
     emprestimo.Valor = double.Parse(Console.ReadLine());
 
