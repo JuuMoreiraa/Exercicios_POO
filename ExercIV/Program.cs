@@ -13,7 +13,7 @@ switch (opcao)
         seguro.Contratante = Console.ReadLine();
         Console.Write("Informe o veículo:  ");
         seguro.Veiculo = Console.ReadLine();
-        Console.Write("Por favor, nos informe o nome do contratante: ");
+        Console.Write("Por favor, nos informe o ano do veículo: ");
         seguro.AnoVeiculo = int.Parse(Console.ReadLine());
 
         if(seguro.AnoVeiculo >= 2000 && seguro.AnoVeiculo <= 2010){
